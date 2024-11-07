@@ -1,0 +1,84 @@
+<main>
+      <header>
+        <a className="logo">MyBlogs</a>
+        <nav>
+          <a>login</a>
+          <a>register</a>
+        </nav>
+      </header>
+      <div className="post">
+        <div className="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL6bmlIucVIfLAFFsZQ6A51YM3JwBOCMoryw&s " />
+        </div>
+        <div className="text">
+          <h2>New Sports Cars In Town</h2>
+          <p className="info">
+            <span className="author">usman ali</span>
+            <time>04-11-2024 15:57</time>
+          </p>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+        </div>
+      </div>
+      
+      <Post/>
+    </main>
+
+=====================================
+body{
+  color: #555;
+}
+img{
+  max-width: 100%;
+}
+main{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+header a{
+  color: inherit;
+}
+header .logo{
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: black;
+}
+header nav{
+  display: flex;
+  gap: 15px;
+}
+.post{
+  display: grid;
+  grid-template-columns: 0.9fr  1.1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.text h2{
+  color: black;
+  margin: 0;
+  font-size: 1.6rem;
+}
+.post p.info{
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+  font-size: .7rem;
+  color: #aaa;
+  margin:6px 0;
+  margin-top: 10px;
+}
+.author{
+  color: #333;
+}
+.post p.summery{
+  margin: 10px 0;
+  line-height: 1.4rem;
+  color: inherit;
+} 
